@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ironPot42.Extensions", "ironPot42.Extensions\ironPot42.Extensions.csproj", "{0052DA39-17C0-4885-80DC-B4C5FE9552EA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F7441C2A-CB80-446B-A879-740C82527A00}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0052DA39-17C0-4885-80DC-B4C5FE9552EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0052DA39-17C0-4885-80DC-B4C5FE9552EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0052DA39-17C0-4885-80DC-B4C5FE9552EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0052DA39-17C0-4885-80DC-B4C5FE9552EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EE9DEAB7-2112-4FE7-ACC9-3AF72C68A4E1}
+	EndGlobalSection
+EndGlobal
