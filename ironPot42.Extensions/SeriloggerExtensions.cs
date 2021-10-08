@@ -14,7 +14,7 @@ namespace ironPot42.Extensions
       (context, configuration) =>
       {
         var logFilePath = string.IsNullOrWhiteSpace(context.Configuration.GetValue<string>("Serilogger:logFilePath")) ?
-                          "./log/myapp.log" : context.Configuration.GetValue<string>("Serilogger:logFilePath"); 
+                          "./log/myapp.log" : context.Configuration.GetValue<string>("Serilogger:logFilePath");
         var seqUri = context.Configuration.GetValue<string>("Serilogger:seq:uri");
         var seqApiKey = context.Configuration.GetValue<string>("Serilogger:seq:apiKey");
         var elasticsearchUri = context.Configuration.GetValue<string>("Serilogger:elasticsearchUri");

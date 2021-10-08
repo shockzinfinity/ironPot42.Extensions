@@ -12,7 +12,7 @@ indent_style = space
 #Formatting - new line options
 
 #require members of object intializers to be on separate lines
-csharp_new_line_before_members_in_object_initializers = true
+csharp_new_line_before_members_in_object_initializers =false
 
 #Formatting - organize using options
 
@@ -45,3 +45,7 @@ dotnet_style_require_accessibility_modifiers = for_non_interface_members:suggest
 
 #when this rule is set to a list of modifiers, prefer the specified ordering.
 csharp_preferred_modifier_order = static,public:suggestion
+csharp_new_line_before_open_brace=all
+csharp_new_line_before_members_in_anonymous_types=false
+csharp_new_line_between_query_expression_clauses=false
+insert_final_newline=true
