@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace ironPot42.Extensions
 {
@@ -10,11 +11,7 @@ namespace ironPot42.Extensions
       if (endDate < startDate)
         throw new ArgumentException("endDate must be greater than or equal to startDate");
 
-      while (startDate <= endDate)
-      {
-        yield return startDate;
-        startDate = startDate.AddDays(1);
-      }
+      return Enumerable.Range(0, (endDate - startDate).Days + 1).Select(d => startDate.AddDays(d));
     }
   }
 }
