@@ -21,9 +21,8 @@ namespace ironPot42.Extensions
 
         configuration.Enrich.FromLogContext()
                      .Enrich.WithCorrelationId()
-                     .Enrich.WithClientIp()
-                     .Enrich.WithClientAgent()
-                     .Enrich.WithClientAgent()
+                     .Enrich.WithClientIp() // Startup > ConfigureServices() > services.AddHttpContextAccessor() required
+                     .Enrich.WithClientAgent() // Startup > ConfigureServices() > services.AddHttpContextAccessor() required
                      .Enrich.WithMachineName()
                      .Enrich.WithProperty("Envrionment", context.HostingEnvironment.EnvironmentName)
                      .Enrich.WithProperty("Application", context.HostingEnvironment.ApplicationName)
