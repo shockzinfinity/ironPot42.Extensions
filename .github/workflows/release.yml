@@ -4,7 +4,7 @@ on:
   push:
     branches:
       # - main
-      - "releases/**"
+      - "release/**"
     # tags:
     #   - "v[0-9]+.[0-9]+.[0-9]+"
 
@@ -22,8 +22,9 @@ jobs:
       - name: Build
         run: dotnet build --configuration Release --no-restore
       - name: Publish ironPot42.Extensions
-        uses: brandedoutcast/publish-nuget@v2.5.5
+        uses: alirezanet/publish-nuget@v3.0.1
         with:
           PROJECT_FILE_PATH: ./ironPot42.Extensions/ironPot42.Extensions.csproj
           TAG_COMMIT: false
+          INCLUDE_SYMBOLS: false
           NUGET_KEY: ${{secrets.NUGET_TOKEN}}
