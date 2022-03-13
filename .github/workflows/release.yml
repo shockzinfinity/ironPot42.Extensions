@@ -22,7 +22,7 @@ jobs:
       - name: Build
         run: dotnet build --configuration Release --no-restore
       - name: Publish ironPot42.Extensions
-        uses: brandedoutcast/publish-nuget@v2.5.5
+        uses: alirezanet/publish-nuget@v3.0.0
         with:
           PROJECT_FILE_PATH: ./ironPot42.Extensions/ironPot42.Extensions.csproj
           TAG_COMMIT: false
