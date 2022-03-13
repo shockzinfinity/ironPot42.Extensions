@@ -1,10 +1,11 @@
 ﻿using System;
+using System.Threading.Tasks;
 
 namespace ironPot42.Extensions
 {
   public static class Generator
   {
-    public static string MongoObjectId()
+    public static Task<string> MongoObjectId()
     {
       Int64 val = 0;
       var st = new DateTime(1970, 1, 1);
@@ -23,7 +24,7 @@ namespace ironPot42.Extensions
         num = rand.Next(1, 16);
         timestamp += num.ToString("X");
       }
-      return timestamp.ToLower();
+      return Task.FromResult(timestamp.ToLower());
     }
   }
 }
