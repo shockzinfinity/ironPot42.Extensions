@@ -19,6 +19,7 @@
     <NeutralLanguage>ko-KR</NeutralLanguage>
     <PackageTags>ironpot42;ironpot;extensions</PackageTags>
     <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Serilog.AspNetCore" Version="5.0.0" />
