@@ -22,8 +22,9 @@ jobs:
       - name: Build
         run: dotnet build --configuration Release --no-restore
       - name: Publish ironPot42.Extensions
-        uses: alirezanet/publish-nuget@v3.0.0
+        uses: alirezanet/publish-nuget@v3.0.1
         with:
           PROJECT_FILE_PATH: ./ironPot42.Extensions/ironPot42.Extensions.csproj
           TAG_COMMIT: false
+          INCLUDE_SYMBOLS: false
           NUGET_KEY: ${{secrets.NUGET_TOKEN}}
