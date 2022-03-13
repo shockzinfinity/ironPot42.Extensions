@@ -1,7 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <Version>0.1.7</Version>
+    <Year>$([System.DateTime]::UtcNow.ToString("yy"))</Year>
+    <Month>$([System.DateTime]::UtcNow.ToString("MM"))</Month>
+    <Date>$([System.DateTime]::UtcNow.ToString("dd"))</Date>
+    <Time>$([System.DateTime]::UtcNow.ToString("HHmm"))</Time>
+    <Version>$(Year).$(Month).$(Date).$(Time)</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>ironPot42.Extensions</PackageId>
     <Product>ironPot42 Extensions</Product>
